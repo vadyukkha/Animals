@@ -1,0 +1,121 @@
+Create dog1
+Dog 1 mass: 20.7
+Dog 1 sex: Male
+Dog 1 color: Golden
+Dog 1 age: 3
+Dog 1 name: Buddy
+Dog 1 race: Labrador Retrievers
+Dog 1 says: Woof
+
+Create Dog2 using copy-constructor
+Dog 2 mass: 20.7
+Dog 2 sex: Male
+Dog 2 color: Golden
+Dog 2 age: 3
+Dog 2 name: Buddy
+Dog 2 race: Labrador Retrievers
+Dog 2 says: Woof
+
+Create dog3 using move-constructor
+Dog 3 mass: 20.7
+Dog 3 sex: Male
+Dog 3 color: Golden
+Dog 3 age: 3
+Dog 3 name: Buddy
+Dog 3 race: Labrador Retrievers
+Dog 3 says: Woof
+Dog 2 mass after move: 0
+Dog 2 sex after move: nullptr
+Dog 2 color after move: nullptr
+Dog 2 age after move: 0
+Dog 2 name after move: nullptr
+
+Update dog1
+Dog 1 new mass: 25.1
+Dog 1 new sex: Female
+Dog 1 new age: 5
+Dog 1 new color: Brown
+Dog 1 new name: Max
+Dog 1 new race: Golden Retrievers
+
+Create dog4 using copy operator
+Dog 4 mass: 25.1
+Dog 4 sex: Female
+Dog 4 color: Brown
+Dog 4 age: 5
+Dog 4 name: Max
+Dog 4 race: Golden Retrievers
+
+Create dog5 using move operator
+Dog 5 mass: 25.1
+Dog 5 sex: Female
+Dog 5 color: Brown
+Dog 5 age: 5
+Dog 5 name: Max
+Dog 5 race: Golden Retrievers
+Dog 4 mass after move: 0
+Dog 4 sex after move: nullptr
+Dog 4 color after move: nullptr
+Dog 4 age after move: 0
+Dog 4 name after move: nullptr
+
+Create fox1
+Fox 1 mass: 7.5
+Fox 1 sex: Female
+Fox 1 color: Red
+Fox 1 age: 4
+Fox 1 name: Foxy
+Fox 1 type: Red Fox
+Fox 1 says: Ring-ding-ding-ding-dingeringeding!
+
+Create fox2 using copy-constructor
+Fox 2 mass: 7.5
+Fox 2 sex: Female
+Fox 2 color: Red
+Fox 2 age: 4
+Fox 2 name: Foxy
+Fox 2 type: Red Fox
+Fox 2 says: Ring-ding-ding-ding-dingeringeding!
+
+Create fox3 using move-constructor
+Fox 3 mass: 7.5
+Fox 3 sex: Female
+Fox 3 color: Red
+Fox 3 age: 4
+Fox 3 name: Foxy
+Fox 3 type: Red Fox
+Fox 3 says: Ring-ding-ding-ding-dingeringeding!
+Fox 2 mass after move: 0
+Fox 2 sex after move: nullptr
+Fox 2 color after move: nullptr
+Fox 2 age after move: 0
+Fox 2 name after move: nullptr
+
+Update fox1
+Fox 1 new mass: 8.2
+Fox 1 new sex: Male
+Fox 1 new age: 3
+Fox 1 new color: Gray
+Fox 1 new name: Finn
+Fox 1 new type: Gray Fox
+
+Create fox4 using copy operator
+Fox 4 mass: 8.2
+Fox 4 sex: Male
+Fox 4 color: Gray
+Fox 4 age: 3
+Fox 4 name: Finn
+Fox 4 type: Gray Fox
+
+Create fox5 using move operator
+Fox 5 mass: 8.2
+Fox 5 sex: Male
+Fox 5 color: Gray
+Fox 5 age: 3
+Fox 5 name: Finn
+Fox 5 type: Gray Fox
+Fox 4 mass after move: 0
+Fox 4 sex after move: nullptr
+Fox 4 color after move: nullptr
+Fox 4 age after move: 0
+Fox 4 name after move: nullptr
