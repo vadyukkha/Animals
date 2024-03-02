@@ -1,10 +1,13 @@
+// Copyright 2024 by Contributors
 #include "../include/animals.h"
 
+// All output saved in file output_main.txt
+
 #define PRINT_MASS(text, mass) {std::cout << text << mass << std::endl;}
-#define PRINT_SEX(text, sex) {if (sex != nullptr) std::cout << text << sex << std::endl; else std::cout << text << "nullptr" << std::endl;}
-#define PRINT_COLOR(text, color) {if (color != nullptr) std::cout << text << color << std::endl; else std::cout << text << "nullptr" << std::endl;}
+#define PRINT_SEX(text, sex) {if (sex != nullptr) {std::cout << text << sex << std::endl;} else {std::cout << text << "nullptr" << std::endl;}}
+#define PRINT_COLOR(text, color) {if (color != nullptr) {std::cout << text << color << std::endl;} else {std::cout << text << "nullptr" << std::endl;}}
 #define PRINT_AGE(text, age) {std::cout << text << age << std::endl;}
-#define PRINT_NAME(text, name) {if (name != nullptr) std::cout << text << name << std::endl; else std::cout << text << "nullptr" << std::endl;}
+#define PRINT_NAME(text, name) {if (name != nullptr) {std::cout << text << name << std::endl;} else {std::cout << text << "nullptr" << std::endl;}}
 #define PRINT_RACE(text, race) {std::cout << text << race << std::endl;}
 #define PRINT_VOICE(text, voice) {std::cout << text << voice << std::endl;}
 #define PRINT_TYPE(text, type) {std::cout << text << type << std::endl;}
@@ -12,7 +15,7 @@
 int main() {
     std::cout << "Create dog1" << std::endl;
 
-    Dog dog1(20.7, "Male", "Golden", 3, "Buddy", Dog::Breed::LABRADOR_RETRIEVERS);
+    Dog dog1(20.7, "Male", "Golden", 3, "Buddy", Dog::Breed::SPITZ);
     PRINT_MASS("Dog 1 mass: ", dog1.GetMass());
     PRINT_SEX("Dog 1 sex: ", dog1.GetSex());
     PRINT_COLOR("Dog 1 color: ", dog1.GetColor());

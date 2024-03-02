@@ -117,7 +117,8 @@ Dog::Dog(const Dog& other)
     snprintf(name_, size, "%s", other.name_);
 }
 
-Dog::Dog(Dog&& other) noexcept : Animal(std::move(other)), name_(std::move(other.name_)),
+Dog::Dog(Dog&& other) noexcept :
+        Animal(std::move(other)), name_(std::move(other.name_)),
         race_(std::move(other.race_)) {
     other.name_ = nullptr;
     other.race_ = Breed::UNDEFINED;
@@ -262,7 +263,7 @@ const char* Fox::WhatDoesSay() const {
 
 // Перегрузка оператора << для enum класса Dog::Breed (addition)
 std::ostream& operator<<(std::ostream& os, const Dog::Breed& breed) {
-    switch(breed) {
+    switch (breed) {
         case Dog::Breed::LABRADOR_RETRIEVERS:
             os << "Labrador Retrievers";
             break;
@@ -302,7 +303,7 @@ std::ostream& operator<<(std::ostream& os, const Dog::Breed& breed) {
 
 // Перегрузка оператора << для enum класса Fox::TypeFox (addition)
 std::ostream& operator<<(std::ostream& os, const Fox::TypeFox& type) {
-    switch(type) {
+    switch (type) {
         case Fox::TypeFox::GRAY_FOX:
             os << "Gray Fox";
             break;
