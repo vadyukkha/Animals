@@ -12,16 +12,6 @@ constexpr const char* __UNDEFINED__ = "Undefined";
 
 class Animal {
  public:
-    explicit Animal(
-        const float& mass = 0.0,
-        const char* sex = __UNDEFINED__,
-        const char* color = __UNDEFINED__,
-        const uint32_t& age = 0);
-
-    Animal(const Animal& other);
-    Animal(Animal&& other) noexcept;
-    virtual ~Animal();
-
     void SetMass(const float& mass);
     void SetSex(const char* sex);
     void SetAge(const uint32_t& age);
@@ -32,16 +22,26 @@ class Animal {
     uint32_t GetAge() const;
     char* GetColor() const;
 
-    Animal& operator=(const Animal& other);
-    Animal& operator=(Animal&& other) noexcept;
-
-    virtual const char* WhatDoesSay() const = 0;
-
  protected:
     float mass_;
     char* sex_;
     char* color_;
     uint32_t age_;
+
+    explicit Animal(
+        const float& mass = 0.0,
+        const char* sex = __UNDEFINED__,
+        const char* color = __UNDEFINED__,
+        const uint32_t& age = 0);
+
+    Animal(const Animal& other);
+    Animal(Animal&& other) noexcept;
+    virtual ~Animal();
+
+    Animal& operator=(const Animal& other);
+    Animal& operator=(Animal&& other) noexcept;
+
+    virtual const char* WhatDoesSay() const = 0;
 };
 
 class Dog : public Animal {
