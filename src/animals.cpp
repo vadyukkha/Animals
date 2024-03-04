@@ -175,7 +175,8 @@ const char* Dog::WhatDoesSay() const {
 Fox::Fox(const float& mass, const char* sex,
         const char* color, const uint32_t& age,
         const char* name, const TypeFox& type)
-        : Animal(mass, sex, color, age), type_(type) {
+        : Animal(mass, sex, color, age), type_(type),
+        numberRabbitsEaten_(0) {
     size_t size = strlen(name) + 1;
     name_ = new char[size];
     snprintf(name_, size, "%s", name);
