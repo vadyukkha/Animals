@@ -182,7 +182,7 @@ Fox::Fox(const float& mass, const char* sex,
     snprintf(name_, size, "%s", name);
 }
 
-Fox::Fox(const Fox& other) : Animal(other), type_(other.type_), 
+Fox::Fox(const Fox& other) : Animal(other), type_(other.type_),
         numberRabbitsEaten_(other.numberRabbitsEaten_) {
     size_t size = strlen(other.name_) + 1;
     name_ = new char[size];
